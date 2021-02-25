@@ -1,0 +1,15 @@
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\bin\Debug\net5.0\CryptoTracker.DataAccess.deps.json
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\bin\Debug\net5.0\CryptoTracker.DataAccess.dll
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\bin\Debug\net5.0\ref\CryptoTracker.DataAccess.dll
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\bin\Debug\net5.0\CryptoTracker.DataAccess.pdb
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\obj\Debug\net5.0\CryptoTracker.DataAccess.csprojAssemblyReference.cache
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\obj\Debug\net5.0\CryptoTracker.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\obj\Debug\net5.0\CryptoTracker.DataAccess.AssemblyInfoInputs.cache
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\obj\Debug\net5.0\CryptoTracker.DataAccess.AssemblyInfo.cs
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\obj\Debug\net5.0\CryptoTracker.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\obj\Debug\net5.0\CryptoTracker.DataAccess.dll
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\obj\Debug\net5.0\ref\CryptoTracker.DataAccess.dll
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\obj\Debug\net5.0\CryptoTracker.DataAccess.pdb
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\bin\Debug\net5.0\CryptoTracker.DataAccess.runtimeconfig.json
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\bin\Debug\net5.0\CryptoTracker.DataAccess.runtimeconfig.dev.json
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.DataAccess\obj\Debug\net5.0\CryptoTracker.DataAccess.genruntimeconfig.cache

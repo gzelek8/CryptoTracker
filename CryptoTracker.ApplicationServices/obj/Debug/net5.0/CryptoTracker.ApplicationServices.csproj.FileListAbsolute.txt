@@ -1,0 +1,15 @@
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\bin\Debug\net5.0\CryptoTracker.ApplicationServices.deps.json
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\bin\Debug\net5.0\CryptoTracker.ApplicationServices.dll
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\bin\Debug\net5.0\ref\CryptoTracker.ApplicationServices.dll
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\bin\Debug\net5.0\CryptoTracker.ApplicationServices.pdb
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\bin\Debug\net5.0\CryptoTracker.DataAccess.dll
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\bin\Debug\net5.0\CryptoTracker.DataAccess.pdb
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.csprojAssemblyReference.cache
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.AssemblyInfoInputs.cache
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.AssemblyInfo.cs
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.csproj.CoreCompileInputs.cache
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.csproj.CopyComplete
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.dll
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\ref\CryptoTracker.ApplicationServices.dll
+C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.pdb
