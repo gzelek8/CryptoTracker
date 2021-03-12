@@ -5799,24 +5799,24 @@
   },
   "packageFolders": {
     "C:\\Users\\peepe\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\peepe\\Desktop\\dotNetProjects\\CryptoTracker\\CryptoTracker.DataAccess\\CryptoTracker.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\peepe\\Desktop\\Projects\\.net\\CryptoTracker\\CryptoTracker.DataAccess\\CryptoTracker.DataAccess.csproj",
       "projectName": "CryptoTracker.DataAccess",
-      "projectPath": "C:\\Users\\peepe\\Desktop\\dotNetProjects\\CryptoTracker\\CryptoTracker.DataAccess\\CryptoTracker.DataAccess.csproj",
+      "projectPath": "C:\\Users\\peepe\\Desktop\\Projects\\.net\\CryptoTracker\\CryptoTracker.DataAccess\\CryptoTracker.DataAccess.csproj",
       "packagesPath": "C:\\Users\\peepe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\peepe\\Desktop\\dotNetProjects\\CryptoTracker\\CryptoTracker.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\peepe\\Desktop\\Projects\\.net\\CryptoTracker\\CryptoTracker.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\peepe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5877,7 +5877,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -13,3 +13,11 @@ C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationSer
 C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.dll
 C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\ref\CryptoTracker.ApplicationServices.dll
 C:\Users\peepe\Desktop\dotNetProjects\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.pdb
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.csprojAssemblyReference.cache
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.AssemblyInfoInputs.cache
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.AssemblyInfo.cs
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.csproj.CoreCompileInputs.cache
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.dll
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\ref\CryptoTracker.ApplicationServices.dll
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.pdb

@@ -1,4 +1,5 @@
-﻿using CryptoTracker.ApplicationServices.API.Domain;
+﻿using AutoMapper;
+using CryptoTracker.ApplicationServices.API.Domain;
 using CryptoTracker.ApplicationServices.API.Domain.Models;
 using CryptoTracker.DataAccess;
 using MediatR;
@@ -13,29 +14,26 @@ namespace CryptoTracker.ApplicationServices.API.Handlers
 {
     public class GetCryptocurrenciesHandler : IRequestHandler<GetCryptocurrenciesRequest, GetCryptocurrenciesResponse>
     {
-        private readonly IRepository<DataAccess.Entities.Cryptocurrency> cryptocurrencyRepository;
+        private readonly IMapper mapper;
+        private readonly IQuerryExecutor queryExecutor;
 
-        public GetCryptocurrenciesHandler(IRepository<CryptoTracker.DataAccess.Entities.Cryptocurrency> cryptocurrencyRepository)
+        public GetCryptocurrenciesHandler(IMapper mapper, IQuerryExecutor queryExecutor)
         {
-            this.cryptocurrencyRepository = cryptocurrencyRepository;
+            this.mapper = mapper;
+            this.queryExecutor = queryExecutor;
         }
-
-        public Task<GetCryptocurrenciesResponse> Handle(GetCryptocurrenciesRequest request, CancellationToken cancellationToken)
+        public async Task<GetCryptocurrenciesResponse> Handle(GetCryptocurrenciesRequest request, CancellationToken cancellationToken)
         {
-            var cryptocurrencies = this.cryptocurrencyRepository.GetAll();
-            var domainCryptocurrencies = cryptocurrencies.Select(x => new Domain.Models.Cryptocurrency()
-            {
-                Id = x.Id,
-                Name = x.Name,
-                Price = x.Price,
-                Rank = x.Rank,
-            });
+            var query = new GetCryptocurrenciesQuerry();
 
-            var response = new GetCryptocurrenciesResponse()
+            var cryptocurrencies = await this.queryExecutor.Execute(query);
+
+            var mappedCryptocurrencies = this.mapper.Map<List<Domain.Models.Cryptocurrency>>(cryptocurrencies);
+
+            return new GetCryptocurrenciesResponse()
             {
-                Data = domainCryptocurrencies.ToList()
+                Data = mappedCryptocurrencies
             };
-            return Task.FromResult(response);
         }
     }
 }
