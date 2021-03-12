@@ -4,3 +4,6 @@ CryptoTracker/.vs/
 CryptoTracker/bin
 CryptoTracker/obj
 .vs/
+./.vs
+./CryptoTracker/bin
+./CryptoTracker/obj

@@ -9,5 +9,6 @@ namespace CryptoTracker.ApplicationServices.API.Domain.User
 {
     public class GetUsersRequest : IRequest<GetUsersResponse>
     {
+        public string Nick { get; set; }
     }
 }

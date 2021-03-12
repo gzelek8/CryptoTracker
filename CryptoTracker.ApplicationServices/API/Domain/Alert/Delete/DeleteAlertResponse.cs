@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.ApplicationServices.API.Domain.Alert.Delete
 {
-    class DeleteAlertResponse
+    public class DeleteAlertResponse : ResponseBase<Models.Alert>
     {
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.DataAccess.CQRS.Queries.Users
 {
-    class GetUserQuery : QueryBase<User>
+    public class GetUserQuery : QueryBase<User>
     {
         public int Id { get; set; }
         public override async Task<User> Execute(CryptoStorageContext context)

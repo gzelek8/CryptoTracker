@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.ApplicationServices.API.Domain.User.Put
 {
-    class PutUserResponse
+    public class PutUserResponse : ResponseBase<Models.User>
     {
     }
 }

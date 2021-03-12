@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.ApplicationServices.API.Domain.Cryptocurrency.Delete
 {
-    class DeleteCryptocurrencyResponse
+    public class DeleteCryptocurrencyResponse : ResponseBase<Models.Cryptocurrency>
     {
     }
 }

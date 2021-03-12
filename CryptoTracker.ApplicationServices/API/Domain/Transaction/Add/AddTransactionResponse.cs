@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.ApplicationServices.API.Domain.Transaction.Add
 {
-    class AddTransactionResponse
+    public class AddTransactionResponse : ResponseBase<Models.Transaction>
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.ApplicationServices.API.Domain.Wallet.Put
 {
-    class PutWalletResponse
+    public class PutWalletResponse : ResponseBase<Models.Wallet>
     {
     }
 }

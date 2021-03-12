@@ -1,12 +1,10 @@
 ﻿using AutoMapper;
 using CryptoTracker.ApplicationServices.API.Domain.User;
+using CryptoTracker.DataAccess.CQRS;
 using CryptoTracker.DataAccess.CQRS.Queries.Users;
 using MediatR;
 using Remotion.Linq;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -28,7 +26,7 @@ namespace CryptoTracker.ApplicationServices.API.Handlers.User
             {
                 Id = request.UserId
             };
-            var user = await queryExecutor.Execute(query);
+            var user = await this.queryExecutor.Execute(query);
             var mappedUser = mapper.Map<Domain.Models.User>(user);
             return new GetUserByIdResponse()
             {

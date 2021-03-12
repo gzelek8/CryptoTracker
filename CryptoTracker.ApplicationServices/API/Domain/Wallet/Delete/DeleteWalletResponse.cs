@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.ApplicationServices.API.Domain.Wallet.Delete
 {
-    class DeleteWalletResponse
+    public class DeleteWalletResponse : ResponseBase<Models.Wallet>
     {
     }
 }

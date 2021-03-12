@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.ApplicationServices.API.Domain.Alert.Put
 {
-    class PutAlertResponse
+    public class PutAlertResponse : ResponseBase<Models.Alert>
     {
     }
 }
