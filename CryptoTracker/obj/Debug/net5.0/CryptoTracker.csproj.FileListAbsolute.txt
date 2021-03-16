@@ -139,3 +139,4 @@ C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker\obj\Debug\net5.
 C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker\obj\Debug\net5.0\CryptoTracker.RazorTargetAssemblyInfo.cache
 C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker\obj\Debug\net5.0\CryptoTracker.csproj.CopyComplete
 C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker\obj\Debug\net5.0\CryptoTracker.genruntimeconfig.cache
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

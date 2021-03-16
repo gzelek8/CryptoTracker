@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "LqEdGfKtQ8FtvdJInf8GBwQxLqVP+fSMpo2/me/DS6qXYYQEnCTyNdLpPWZsZ3bRUfKtt8lGGTgaJ7V2j+wyWA==",
+  "dgSpecHash": "whaD/SOw5EnUM7i0lEyX5ye0Uqy7iNO62qrtI3EyVA27ZEgxijntik40W9Fr/EadWjuWkGm+5cOOcxngJ/pN1g==",
   "success": true,
   "projectFilePath": "C:\\Users\\peepe\\Desktop\\Projects\\.net\\CryptoTracker\\CryptoTracker.ApplicationServices\\CryptoTracker.ApplicationServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\peepe\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\peepe\\.nuget\\packages\\fluentvalidation\\9.5.3\\fluentvalidation.9.5.3.nupkg.sha512",
+    "C:\\Users\\peepe\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.5.3\\fluentvalidation.aspnetcore.9.5.3.nupkg.sha512",
+    "C:\\Users\\peepe\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.5.3\\fluentvalidation.dependencyinjectionextensions.9.5.3.nupkg.sha512",
     "C:\\Users\\peepe\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\peepe\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\peepe\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

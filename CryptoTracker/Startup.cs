@@ -1,4 +1,6 @@
 using CryptoTracker.ApplicationServices.API.Domain;
+using CryptoTracker.ApplicationServices.API.Profiles;
+using CryptoTracker.ApplicationServices.API.Validators;
 using CryptoTracker.DataAccess;
 using CryptoTracker.DataAccess.CQRS;
 using FluentValidation.AspNetCore;
@@ -27,6 +29,8 @@ namespace CryptoTracker
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvcCore()
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<AddCryptocurrencyValidator>());
             services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.SuppressModelStateInvalidFilter = true;
@@ -36,8 +40,8 @@ namespace CryptoTracker
 
             services.AddTransient<ICommandExecutor, CommandExecutor>();
 
-
-
+            
+            services.AddAutoMapper(typeof(CryptocurrenciesProfile).Assembly);
             services.AddMediatR(typeof(ResponseBase<>));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddDbContext<CryptoStorageContext>(
