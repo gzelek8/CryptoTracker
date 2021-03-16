@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.DataAccess.CQRS.Queries.Transactions
 {
-    class GetTransactionsQuery : QueryBase<List<Transaction>>
+    public class GetTransactionsQuery : QueryBase<List<Transaction>>
     {
         public int? CryptocurrencyId { get; set; }
         public int? UserId { get; set; }
+        public double CryptoAmount { get; set; }
 
         public override Task<List<Transaction>> Execute(CryptoStorageContext context)
         {
@@ -22,6 +23,10 @@ namespace CryptoTracker.DataAccess.CQRS.Queries.Transactions
             else if (UserId != null)
             {
                 return context.Transactions.Where(x => x.UserId == this.UserId).ToListAsync();
+            }
+            else if (CryptoAmount != 0)
+            {
+                return context.Transactions.Where(x => x.CryptoAmout == this.CryptoAmount).ToListAsync();
             }
             else
             {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.DataAccess.CQRS.Commands.Transactions
 {
-    class AddTransactionCommand : CommandBase<Transaction, Transaction>
+    public class AddTransactionCommand : CommandBase<Transaction, Transaction>
     {
         public override async Task<Transaction> Execute(CryptoStorageContext context)
         {

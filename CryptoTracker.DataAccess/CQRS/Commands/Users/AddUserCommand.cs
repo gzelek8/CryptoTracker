@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.DataAccess.CQRS.Commands.Users
 {
-    class AddUserCommand : CommandBase<User, User>
+    public class AddUserCommand : CommandBase<User, User>
     {
         public override async Task<User> Execute(CryptoStorageContext context)
         {

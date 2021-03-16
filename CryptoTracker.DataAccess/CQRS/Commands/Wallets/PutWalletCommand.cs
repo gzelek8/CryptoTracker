@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.DataAccess.CQRS.Commands.Wallets
 {
-    class PutWalletCommand : CommandBase<Wallet, Wallet>
+    public class PutWalletCommand : CommandBase<Wallet, Wallet>
     {
         public override async Task<Wallet> Execute(CryptoStorageContext context)
         {

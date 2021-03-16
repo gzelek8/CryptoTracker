@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.DataAccess.CQRS.Commands.Cryptocurrencies
 {
-    class DeleteCryptocurrencyCommand : CommandBase<Cryptocurrency, Cryptocurrency>
+    public class DeleteCryptocurrencyCommand : CommandBase<Cryptocurrency, Cryptocurrency>
     {
         public override async Task<Cryptocurrency> Execute(CryptoStorageContext context)
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.DataAccess.CQRS
 {
-    public class QueryExecutor : IQuerryExecutor
+    public class QueryExecutor : IQueryExecutor
     {
         private readonly CryptoStorageContext context;
 

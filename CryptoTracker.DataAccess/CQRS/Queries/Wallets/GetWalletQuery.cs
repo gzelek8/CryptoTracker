@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.DataAccess.CQRS.Queries.Wallets
 {
-    class GetWalletQuery : QueryBase<Wallet>
+    public class GetWalletQuery : QueryBase<Wallet>
     {
         public int Id { get; set; }
         public override async Task<Wallet> Execute(CryptoStorageContext context)

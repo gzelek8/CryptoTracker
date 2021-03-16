@@ -21,3 +21,10 @@ C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServ
 C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.dll
 C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\ref\CryptoTracker.ApplicationServices.dll
 C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.pdb
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\bin\Debug\net5.0\CryptoTracker.ApplicationServices.deps.json
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\bin\Debug\net5.0\CryptoTracker.ApplicationServices.dll
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\bin\Debug\net5.0\ref\CryptoTracker.ApplicationServices.dll
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\bin\Debug\net5.0\CryptoTracker.ApplicationServices.pdb
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\bin\Debug\net5.0\CryptoTracker.DataAccess.dll
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\bin\Debug\net5.0\CryptoTracker.DataAccess.pdb
+C:\Users\peepe\Desktop\Projects\.net\CryptoTracker\CryptoTracker.ApplicationServices\obj\Debug\net5.0\CryptoTracker.ApplicationServices.csproj.CopyComplete

@@ -1,4 +1,8 @@
 ﻿using AutoMapper;
+using CryptoTracker.ApplicationServices.API.Domain.Models;
+using CryptoTracker.ApplicationServices.API.Domain.User.Add;
+using CryptoTracker.ApplicationServices.API.Domain.User.Delete;
+using CryptoTracker.ApplicationServices.API.Domain.User.Put;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,24 +18,16 @@ namespace CryptoTracker.ApplicationServices.API.Profiles
             this.CreateMap<DeleteUserRequest, DataAccess.Entities.User>()
                 .ForMember(x => x.Id, y => y.MapFrom(z => z.UserId));
 
-            this.CreateMap<PutUserByIdRequest, DataAccess.Entities.User>()
-                .ForMember(x => x.FirstName, y => y.MapFrom(z => z.FirstName))
-                .ForMember(x => x.LastName, y => y.MapFrom(z => z.LastName))
-                .ForMember(x => x.Position, y => y.MapFrom(z => z.Position))
-                .ForMember(x => x.Workplace, y => y.MapFrom(z => z.Workplace));
+            this.CreateMap<PutUserRequest, DataAccess.Entities.User>()
+                .ForMember(x => x.Id, y => y.MapFrom(z => z.Id))
+                .ForMember(x => x.Nick, y => y.MapFrom(z => z.Nick));
 
             this.CreateMap<AddUserRequest, DataAccess.Entities.User>()
-                .ForMember(x => x.FirstName, y => y.MapFrom(z => z.FirstName))
-                .ForMember(x => x.LastName, y => y.MapFrom(z => z.LastName))
-                .ForMember(x => x.Position, y => y.MapFrom(z => z.Position))
-                .ForMember(x => x.Workplace, y => y.MapFrom(z => z.Workplace));
+                .ForMember(x => x.Nick, y => y.MapFrom(z => z.Nick));
 
             this.CreateMap<DataAccess.Entities.User, User>()
                 .ForMember(x => x.Id, y => y.MapFrom(z => z.Id))
-                .ForMember(x => x.FirstName, y => y.MapFrom(z => z.FirstName))
-                .ForMember(x => x.LastName, y => y.MapFrom(z => z.LastName))
-                .ForMember(x => x.Position, y => y.MapFrom(z => z.Position))
-                .ForMember(x => x.Workplace, y => y.MapFrom(z => z.Workplace));
+                .ForMember(x => x.Nick, y => y.MapFrom(z => z.Nick));
         }
     }
 }

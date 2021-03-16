@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
 using CryptoTracker.ApplicationServices.API.Domain.Transaction;
+using CryptoTracker.DataAccess.CQRS;
+using CryptoTracker.DataAccess.CQRS.Queries.Transactions;
 using MediatR;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -23,7 +24,12 @@ namespace CryptoTracker.ApplicationServices.API.Handlers.Transaction
 
         public async Task<GetTransactionsResponse> Handle(GetTransactionsRequest request, CancellationToken cancellationToken)
         {
-            var query = new GetTransactionsQuery();
+            var query = new GetTransactionsQuery()
+            {
+                UserId = request.UserId,
+                CryptocurrencyId = request.CryptocurrencyId,
+                CryptoAmount = request.CryptoAmout
+            };
             var transactions = await queryExecutor.Execute(query);
             var mappedTransactions = mapper.Map<List<Domain.Models.Transaction>>(transactions);
             return new GetTransactionsResponse()

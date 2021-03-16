@@ -9,5 +9,6 @@ namespace CryptoTracker.ApplicationServices.API.Domain.Wallet
 {
     public class GetWalletsRequest : IRequest<GetWalletsResponse>
     {
+        public int UserId { get; set; }
     }
 }

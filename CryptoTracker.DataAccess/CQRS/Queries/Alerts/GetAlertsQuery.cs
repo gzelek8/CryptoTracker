@@ -10,6 +10,7 @@ namespace CryptoTracker.DataAccess.CQRS.Queries.Alerts
 {
     public class GetAlertsQuery : QueryBase<List<Alert>>
     {
+        public decimal PriceAlert { get; set; }
         public int? CryptocurrencyId { get; set; }
         public int? UserId { get; set; }
         public override Task<List<Alert>> Execute(CryptoStorageContext context)
@@ -22,6 +23,10 @@ namespace CryptoTracker.DataAccess.CQRS.Queries.Alerts
             else if (UserId != null)
             {
                 return context.Alerts.Where(x => x.UserId == this.UserId).ToListAsync();
+            }
+            else if (PriceAlert != 0)
+            {
+                return context.Alerts.Where(x => x.PriceAlert == this.PriceAlert).ToListAsync();
             }
             else
             {

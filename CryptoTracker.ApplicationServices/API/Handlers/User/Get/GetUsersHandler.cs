@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
 using CryptoTracker.ApplicationServices.API.Domain.User;
+using CryptoTracker.DataAccess.CQRS;
+using CryptoTracker.DataAccess.CQRS.Queries.Users;
 using MediatR;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -22,7 +23,10 @@ namespace CryptoTracker.ApplicationServices.API.Handlers.User
         }
         public async Task<GetUsersResponse> Handle(GetUsersRequest request, CancellationToken cancellationToken)
         {
-            var query = new GetUsersQuery();
+            var query = new GetUsersQuery()
+            {
+                Nick = request.Nick
+            };
             var users = await queryExecutor.Execute(query);
             var mappedUsers = mapper.Map<List<Domain.Models.User>>(users);
             return new GetUsersResponse()

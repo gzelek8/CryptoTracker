@@ -77,7 +77,7 @@ namespace CryptoTracker.DataAccess.Migrations
                     b.Property<double>("CryptoAmout")
                         .HasColumnType("float");
 
-                    b.Property<int>("CryptocurrencyId")
+                    b.Property<int?>("CryptocurrencyId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Date")
@@ -89,7 +89,8 @@ namespace CryptoTracker.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CryptocurrencyId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[CryptocurrencyId] IS NOT NULL");
 
                     b.HasIndex("UserId");
 
@@ -164,9 +165,7 @@ namespace CryptoTracker.DataAccess.Migrations
                 {
                     b.HasOne("CryptoTracker.DataAccess.Entities.Cryptocurrency", "Cryptocurrency")
                         .WithOne("Transaction")
-                        .HasForeignKey("CryptoTracker.DataAccess.Entities.Transaction", "CryptocurrencyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CryptoTracker.DataAccess.Entities.Transaction", "CryptocurrencyId");
 
                     b.HasOne("CryptoTracker.DataAccess.Entities.User", "User")
                         .WithMany("Transactions")

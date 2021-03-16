@@ -8,5 +8,7 @@ namespace CryptoTracker.ApplicationServices.API.Domain
     public class GetCryptocurrenciesRequest : IRequest<GetCryptocurrenciesResponse>
     {
         public string Name { get; set; }
+        public int Rank { get; set; }
+        public decimal Price { get; set; }
     }
 }

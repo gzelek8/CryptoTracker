@@ -1,14 +1,16 @@
-﻿using AutoMapper;
+﻿
+using AutoMapper;
 using CryptoTracker.ApplicationServices.API.Domain.Alert;
+using CryptoTracker.DataAccess.CQRS;
+using CryptoTracker.DataAccess.CQRS.Queries.Alerts;
 using MediatR;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CryptoTracker.ApplicationServices.API.Handlers.Alert
+namespace CryptoTracker.ApplicationServices.API.Handlers.Alert.Get
 {
     public class GetAlertsHandler : IRequestHandler<GetAlertsRequest, GetAlertsResponse>
     {
@@ -23,14 +25,21 @@ namespace CryptoTracker.ApplicationServices.API.Handlers.Alert
 
         public async Task<GetAlertsResponse> Handle(GetAlertsRequest request, CancellationToken cancellationToken)
         {
-            var query = new GetAlertsQuery();
-            var alerts = await queryExecutor.Execute(query);
-            var mappedBoards = mapper.Map<List<Domain.Models.Alert>>(alerts);
-            return new GetAlertsResponse()
+            var query = new GetAlertsQuery()
             {
-                Data = mappedBoards
+                PriceAlert = request.PriceAlert,
+                CryptocurrencyId = request.CryptocurrencyId,
+                UserId = request.UserId
             };
 
+            var alert = await this.queryExecutor.Execute(query);
+            var mappedAlert = this.mapper.Map<List<Domain.Models.Alert>>(alert);
+
+            var response = new GetAlertsResponse()
+            {
+                Data = mappedAlert
+            };
+            return response;
         }
     }
 }

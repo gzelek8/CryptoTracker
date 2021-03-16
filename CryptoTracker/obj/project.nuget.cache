@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "uakB3UFoHYs8yH7c8XQQij99o7yGBKaGgE663HM3Vqtz/2OrH6Ihi+IeDiF8V1iBabXcv5ORSpjzBPsBd2ULcA==",
+  "dgSpecHash": "3VeB5tVb7K6i97vc70u4YIveKZJrmFnrNueAQTqj5Ea+a40qbfnWPXqvbL2rR27Hnx6HKaJrWZOZTIURxe1AJQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\peepe\\Desktop\\Projects\\.net\\CryptoTracker\\CryptoTracker\\CryptoTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\peepe\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\peepe\\.nuget\\packages\\coingeckoasyncapi\\1.3.5\\coingeckoasyncapi.1.3.5.nupkg.sha512",
+    "C:\\Users\\peepe\\.nuget\\packages\\fluentvalidation\\9.5.3\\fluentvalidation.9.5.3.nupkg.sha512",
+    "C:\\Users\\peepe\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.5.3\\fluentvalidation.aspnetcore.9.5.3.nupkg.sha512",
+    "C:\\Users\\peepe\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.5.3\\fluentvalidation.dependencyinjectionextensions.9.5.3.nupkg.sha512",
     "C:\\Users\\peepe\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\peepe\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\peepe\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",

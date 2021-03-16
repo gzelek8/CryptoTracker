@@ -3,7 +3,6 @@ using CryptoTracker.ApplicationServices.API.Domain.User;
 using CryptoTracker.DataAccess.CQRS;
 using CryptoTracker.DataAccess.CQRS.Queries.Users;
 using MediatR;
-using Remotion.Linq;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;

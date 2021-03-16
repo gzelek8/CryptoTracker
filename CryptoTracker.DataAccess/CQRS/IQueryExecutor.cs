@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.DataAccess.CQRS
 {
-    public interface IQuerryExecutor
+    public interface IQueryExecutor
     {
         Task<TResult> Execute<TResult>(QueryBase<TResult> query);
-
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CryptoTracker.DataAccess.CQRS.Commands.Cryptocurrencies
 {
-    class PutCryptocurrencyCommand : CommandBase<Cryptocurrency, Cryptocurrency>
+    public class PutCryptocurrencyCommand : CommandBase<Cryptocurrency, Cryptocurrency>
     {
         public override async Task<Cryptocurrency> Execute(CryptoStorageContext context)
         {
