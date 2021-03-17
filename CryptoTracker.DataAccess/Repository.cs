@@ -12,30 +12,24 @@ namespace CryptoTracker.DataAccess
     {
         protected readonly CryptoStorageContext context;
         private DbSet<T> entities;
+
         public Repository(CryptoStorageContext context)
         {
             this.context = context;
             entities = context.Set<T>();
         }
 
-        public void Delete(int id)
+        public Task<List<T>> GetAll()
         {
-            T entity = entities.SingleOrDefault(s => s.Id == id);
-            entities.Remove(entity);
-            context.SaveChanges();
+            return entities.ToListAsync();
         }
 
-        public IEnumerable<T> GetAll()
+        public Task<T> GetById(int id)
         {
-            return entities.AsEnumerable();
+            return entities.SingleOrDefaultAsync(s => s.Id == id);
         }
 
-        public T GetById(int id)
-        {
-            return entities.SingleOrDefault(s => s.Id == id);
-        }
-
-        public void Insert(T entity)
+        public Task Insert(T entity)
         {
             if (entity == null)
             {
@@ -43,17 +37,24 @@ namespace CryptoTracker.DataAccess
             }
 
             entities.Add(entity);
-            context.SaveChanges();
+            return context.SaveChangesAsync();
         }
 
-        public void Update(T entity)
+        public Task Update(T entity)
         {
             if (entity == null)
             {
-                throw new ArgumentNullException("entity");
+                throw new ArgumentNullException(nameof(entity));
             }
 
-            context.SaveChanges();
+            return context.SaveChangesAsync();
+        }
+
+        public async Task Delete(int id)
+        {
+            T entity = await entities.SingleOrDefaultAsync(s => s.Id == id);
+            entities.Remove(entity);
+            await context.SaveChangesAsync();
         }
     }
 }

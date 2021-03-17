@@ -10,6 +10,6 @@ namespace CryptoTracker.ApplicationServices.API.Domain.Models
     {
         public int Id { get; set; }
         public string Nick { get; set; }
-       
+
     }
 }
