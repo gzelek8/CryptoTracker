@@ -19,7 +19,7 @@ namespace CryptoTracker.ApplicationServices.API.Profiles
                 .ForMember(x => x.Id, y => y.MapFrom(z => z.UserId));
 
             this.CreateMap<PutUserRequest, DataAccess.Entities.User>()
-                .ForMember(x => x.Id, y => y.MapFrom(z => z.Id))
+                .ForMember(x => x.Id, y => y.MapFrom(z => z.UserId))
                 .ForMember(x => x.Nick, y => y.MapFrom(z => z.Nick));
 
             this.CreateMap<AddUserRequest, DataAccess.Entities.User>()

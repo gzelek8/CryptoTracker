@@ -9,7 +9,7 @@ namespace CryptoTracker.ApplicationServices.API.Domain.User.Put
 {
     public class PutUserRequest : IRequest<PutUserResponse>
     {
-        public string Id { get; set; }
+        public int UserId { get; set; }
         public string Nick { get; set; }
 
 

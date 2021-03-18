@@ -9,6 +9,6 @@ namespace CryptoTracker.ApplicationServices.API.Domain.Alert.Delete
 {
     public class DeleteAlertRequest : IRequest<DeleteAlertResponse>
     {
-        public int Id { get; set; }
+        public int AlertId { get; set; }
     }
 }

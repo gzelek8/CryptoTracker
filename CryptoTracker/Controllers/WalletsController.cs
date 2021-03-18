@@ -52,20 +52,28 @@ namespace CryptoTracker.Controllers
         }
 
         [HttpPut]
-        [Route("")]
-        public async Task<IActionResult> PutWallet([FromQuery] PutWalletRequest request)
+        [Route("{walletId}")]
+        public async Task<IActionResult> PutWallet([FromRoute] int walletId)
         {
+            var request = new PutWalletRequest()
+            {
+                WalletId = walletId
+            };
             var response = await this.mediator.Send(request);
             return this.Ok(response);
         }
 
         [HttpDelete]
-        [Route("")]
-        public async Task<IActionResult> DeleteWallet([FromQuery] DeleteWalletRequest request)
+        [Route("{walletId}")]
+        public async Task<IActionResult> DeleteWallet([FromRoute] int walletId)
         {
 
+            var request = new DeleteWalletRequest()
+            {
+                WalletId = walletId
+            };
             var response = await this.mediator.Send(request);
-            return this.Ok(response);
+            return this.Ok();
         }
     }
 }

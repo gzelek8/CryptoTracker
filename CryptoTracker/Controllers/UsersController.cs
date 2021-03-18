@@ -50,20 +50,28 @@ namespace CryptoTracker.Controllers
         }
 
         [HttpPut]
-        [Route("")]
-        public async Task<IActionResult> PutUser([FromQuery] PutUserRequest request)
+        [Route("{userId}")]
+        public async Task<IActionResult> PutUser([FromRoute] int userId)
         {
+            var request = new PutUserRequest()
+            {
+               UserId = userId
+            };
             var response = await this.mediator.Send(request);
             return this.Ok(response);
         }
 
         [HttpDelete]
-        [Route("")]
-        public async Task<IActionResult> DeleteUser([FromQuery] DeleteUserRequest request)
+        [Route("{userdId}")]
+        public async Task<IActionResult> DeleteUser([FromRoute] int userId)
         {
 
+            var request = new DeleteUserRequest()
+            {
+                UserId = userId
+            };
             var response = await this.mediator.Send(request);
-            return this.Ok(response);
+            return this.Ok();
         }
     }
 }

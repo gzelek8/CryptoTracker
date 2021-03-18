@@ -49,20 +49,28 @@ namespace CryptoTracker.Controllers
         }
 
         [HttpPut]
-        [Route("")]
-        public async Task<IActionResult> PutCryptocurrency([FromQuery] PutCryptocurrencyRequest request)
+        [Route("{cryptocurrencyId}")]
+        public async Task<IActionResult> PutCryptocurrency([FromRoute] int cryptocurrencyId)
         {
+            var request = new PutCryptocurrencyRequest()
+            {
+                CryptocurrencyId = cryptocurrencyId
+            };
             var response = await this.mediator.Send(request);
             return this.Ok(response);
         }
 
         [HttpDelete]
-        [Route("")]
-        public async Task<IActionResult> DeleteCryptocurrency([FromQuery] DeleteCryptocurrencyRequest request)
+        [Route("{cryptocurrencyId}")]
+        public async Task<IActionResult> DeleteCryptocurrency([FromRoute] int cryptocurrencyId)
         {
 
+            var request = new DeleteCryptocurrencyRequest()
+            {
+                CryptocurrencyId = cryptocurrencyId
+            };
             var response = await this.mediator.Send(request);
-            return this.Ok(response);
+            return this.Ok();
         }
     }
 }

@@ -16,10 +16,10 @@ namespace CryptoTracker.ApplicationServices.API.Profiles
         public AlertsProfile()
         {
             this.CreateMap<DeleteAlertRequest, DataAccess.Entities.Alert>()
-                .ForMember(x => x.Id, y => y.MapFrom(z => z.Id));
+                .ForMember(x => x.Id, y => y.MapFrom(z => z.AlertId));
 
             this.CreateMap<PutAlertRequest, DataAccess.Entities.Alert>()
-                .ForMember(x => x.Id, y => y.MapFrom(z => z.Id))
+                .ForMember(x => x.Id, y => y.MapFrom(z => z.AlertId))
                 .ForMember(x => x.PriceAlert, y => y.MapFrom(z => z.PriceAlert))
                 .ForMember(x => x.CryptocurrencyId, y => y.MapFrom(z => z.CryptocurrencyId));
 

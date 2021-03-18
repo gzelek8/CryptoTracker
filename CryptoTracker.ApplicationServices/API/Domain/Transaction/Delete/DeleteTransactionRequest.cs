@@ -9,6 +9,6 @@ namespace CryptoTracker.ApplicationServices.API.Domain.Transaction.Delete
 {
     public class DeleteTransactionRequest : IRequest<DeleteTransactionResponse>
     {
-        public int Id { get; set; }
+        public int TransactionId { get; set; }
     }
 }

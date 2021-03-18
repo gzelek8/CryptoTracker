@@ -9,6 +9,6 @@ namespace CryptoTracker.ApplicationServices.API.Domain.Wallet.Delete
 {
     public class DeleteWalletRequest : IRequest<DeleteWalletResponse>
     {
-        public int Id { get; set; }
+        public int WalletId { get; set; }
     }
 }

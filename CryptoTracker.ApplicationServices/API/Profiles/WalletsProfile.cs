@@ -16,10 +16,10 @@ namespace CryptoTracker.ApplicationServices.API.Profiles
         public WalletsProfile()
         {
             this.CreateMap<DeleteWalletRequest, DataAccess.Entities.Wallet>()
-                .ForMember(x => x.Id, y => y.MapFrom(z => z.Id));
+                .ForMember(x => x.Id, y => y.MapFrom(z => z.WalletId));
 
             this.CreateMap<PutWalletRequest, DataAccess.Entities.Wallet>()
-                .ForMember(x => x.Id, y => y.MapFrom(z => z.Id))
+                .ForMember(x => x.Id, y => y.MapFrom(z => z.WalletId))
                 .ForMember(x => x.UserId, y => y.MapFrom(z => z.UserId));
 
             this.CreateMap<AddWalletRequest, DataAccess.Entities.Wallet>()

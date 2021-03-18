@@ -16,10 +16,10 @@ namespace CryptoTracker.ApplicationServices.API.Profiles
         public CryptocurrenciesProfile()
         {
             this.CreateMap<DeleteCryptocurrencyRequest, DataAccess.Entities.Cryptocurrency>()
-                .ForMember(x => x.Id, y => y.MapFrom(z => z.Id));
+                .ForMember(x => x.Id, y => y.MapFrom(z => z.CryptocurrencyId));
 
             this.CreateMap<PutCryptocurrencyRequest, DataAccess.Entities.Cryptocurrency>()
-                .ForMember(x => x.Id, y => y.MapFrom(z => z.Id))
+                .ForMember(x => x.Id, y => y.MapFrom(z => z.CryptocurrencyId))
                 .ForMember(x => x.Name, y => y.MapFrom(z => z.Name))
                 .ForMember(x => x.Rank, y => y.MapFrom(z => z.Rank))
                 .ForMember(x => x.Price, y => y.MapFrom(z => z.Price));
